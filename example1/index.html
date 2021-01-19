@@ -4,7 +4,24 @@
     <!-- everything that isn't content -->
     <head>
         <meta charset="utf-8">
-        
+         <!-- content -->
+    <body>
+        <!-- an image -->
+        <img id="myImage"
+             alt="Bunch of penguins on ice"
+             src="https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2018/11/Antarctica/antarctica-ade%CC%81lie-penguins-ice.adapt.1900.1.jpg" class="center">
+        <!-- some text and links -->
+     
+        <p>Climate change in Antarctica</p>
+
+        <div>
+            On a frigid evening nearly 30 years later, Poncet and I stood in the wheelhouse of his 87-foot boat, the Hans Hansson, scanning the ice for Adélie penguins. At 39, Poncet is blond, block-jawed, and quiet, with enormous hands. He has spent much of his adult life ferrying scientists and other visitors in charter boats through the waters around South Georgia and Antarctica from his base in the Falklands. Along with a team of photographers led by Paul Nicklen, I had joined him for a voyage along the west coast of the Antarctic Peninsula. We wanted to see how things were changing in a region he’d known his whole life.
+        </div>
+
+        <p1><a href="https://www.nationalgeographic.com/magazine/2018/11/antarctica-climate-change-western-peninsula-ice-melt-krill-penguin-leopard-seal/" class="contact">Source - National Geographic</a>
+        </p1>
+
+        <p><a href="mailto:sachin.dabas@outlook.com" class="contact">Contact for queries</a></p>
         <!-- css -->
         <style>
              html   {
@@ -13,28 +30,24 @@
 
                     /* set image to center*/
                 .center {
-                            padding: 90px; /*setback around text*/
+                            padding: 90px; /*setback around image*/
                             width: 512px;
                             display: block;
                             margin-left:auto;
                             margin-right:auto;
                             width:50%;                        
                         }
-           
+                        
+                        /* center alignment of heading text*/
                         p {
-                             margin-top:-2cm;
+                             margin-top:-2cm; /*due to padding of image*/
                              margin-left:auto;
-                             text-align: center;
-                             font-size: 25px;
-                             color: rgb(46, 44, 44);
-                            }
+                             text-align:center;
+                             font-size:25px;
+                             color: rgb(46, 44, 44); /*grey color*/
+                            }  
 
-                        p1 {
-                                margin left:460px;
-                                color: rgb(46,44,44);
-                            }    
-
-                        /* align text centrally*/        
+                        /* align body text centrally*/        
                         div 
                         {
                             padding: 10px;
@@ -46,50 +59,17 @@
                              color: rgb(82, 82, 82);
                         }        
 
-            #caption {
-                display: none; /* start with caption hidden */
-                font-style: italic;
-            }
-            
+                        /* href links */
             .contact{ font-size: 12px; color:rgb(82,82,82); text-decoration: none;}
         </style>
     </head>
 
-    <!-- content -->
-    <body>
-            
-        <!-- an image -->
-        <img id="myImage"
-             alt="Bunch of penguins on ice"
-             src="https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2018/11/Antarctica/antarctica-ade%CC%81lie-penguins-ice.adapt.1900.1.jpg" class="center">
-        <!-- some text and links -->
-     
-        <p> 
-            Climate change in Antarctica
-       </p>
-     
-
-        <div>
-            On a frigid evening nearly 30 years later, Poncet and I stood in the wheelhouse of his 87-foot boat, the Hans Hansson, scanning the ice for Adélie penguins. At 39, Poncet is blond, block-jawed, and quiet, with enormous hands. He has spent much of his adult life ferrying scientists and other visitors in charter boats through the waters around South Georgia and Antarctica from his base in the Falklands. Along with a team of photographers led by Paul Nicklen, I had joined him for a voyage along the west coast of the Antarctic Peninsula. We wanted to see how things were changing in a region he’d known his whole life.
-        </div>
-
-        <p1>
-            <a href="https://www.nationalgeographic.com/magazine/2018/11/antarctica-climate-change-western-peninsula-ice-melt-krill-penguin-leopard-seal/" class="contact">Source - National Geographic
-            
-            </a>
-        </p1>
-
-
-        <p><a href="mailto:sachin.dabas@outlook.com" class="contact">Contact for queries</a></p>
+   
 
         <!-- javascript -->
         <script type="application/javascript">
             // get reference to html elements
             const img = document.getElementById('myImage')
-
-            // listen to events related to the image
-            img.addEventListener('mouseover', mouseOver, false)
-            img.addEventListener('mouseout', mouseOut, false)
 
         </script>
 
