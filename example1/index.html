@@ -1,47 +1,86 @@
-<!-- see also https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started -->
-
 <!DOCTYPE html> 
 <html>
 
     <!-- everything that isn't content -->
     <head>
         <meta charset="utf-8">
-        <title>My test page</title>
-
+        
         <!-- css -->
         <style>
-            /* uncomment to change default font */
-             html {
-                font-family: Roboto;
-            } */
+             html   {
+                     font-family: Roboto;
+                    }
 
-            img {
-                width: 512px; /* set image width */
-            }
+                    /* set image to center*/
+                .center {
+                            padding: 90px; /*setback around text*/
+                            width: 512px;
+                            display: block;
+                            margin-left:auto;
+                            margin-right:auto;
+                            width:50%;                        
+                        }
+           
+                        p {
+                             margin-top:-2cm;
+                             margin-left:auto;
+                             text-align: center;
+                             font-size: 25px;
+                             color: rgb(46, 44, 44);
+                            }
+
+                        p1 {
+                                margin left:460px;
+                                color: rgb(46,44,44);
+                            }    
+
+                        /* align text centrally*/        
+                        div 
+                        {
+                            padding: 10px;
+                            margin-left: 460px;
+                            height: 200px;
+                            width:950px;
+                            text-align: justify;
+                            font-size: 16px;
+                             color: rgb(82, 82, 82);
+                        }        
 
             #caption {
                 display: none; /* start with caption hidden */
-                font-style: regular;
+                font-style: italic;
             }
+            
+            .contact{ font-size: 12px; color:rgb(82,82,82); text-decoration: none;}
         </style>
     </head>
 
     <!-- content -->
     <body>
-        <!-- some text and links -->
-        <p>
-            <a href="https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg">Event Horizon Telescope, uploader cropped and converted TIF to JPG</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
-        </p>
-        
+            
         <!-- an image -->
         <img id="myImage"
-             alt="Black hole - Messier 87 crop max res"
-             src="https://wi-images.condecdn.net/image/BQe8blX8dQX/crop/810/f/gettyimages-163344719.jpg">
+             alt="Bunch of penguins on ice"
+             src="https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2018/11/Antarctica/antarctica-ade%CC%81lie-penguins-ice.adapt.1900.1.jpg" class="center">
+        <!-- some text and links -->
+     
+        <p> 
+            Climate change in Antarctica
+       </p>
+     
 
-        <!-- a caption -->
-        <p id="caption">
-            A handful of king penguins have been caught by camera traps on the islands, often hanging out in the gentoo nesting grounds. King penguins can be found elsewhere in Patagonia, but hadn’t been spotted on this island before.
-        </p>
+        <div>
+            On a frigid evening nearly 30 years later, Poncet and I stood in the wheelhouse of his 87-foot boat, the Hans Hansson, scanning the ice for Adélie penguins. At 39, Poncet is blond, block-jawed, and quiet, with enormous hands. He has spent much of his adult life ferrying scientists and other visitors in charter boats through the waters around South Georgia and Antarctica from his base in the Falklands. Along with a team of photographers led by Paul Nicklen, I had joined him for a voyage along the west coast of the Antarctic Peninsula. We wanted to see how things were changing in a region he’d known his whole life.
+        </div>
+
+        <p1>
+            <a href="https://www.nationalgeographic.com/magazine/2018/11/antarctica-climate-change-western-peninsula-ice-melt-krill-penguin-leopard-seal/" class="contact">Source - National Geographic
+            
+            </a>
+        </p1>
+
+
+        <p><a href="mailto:sachin.dabas@outlook.com" class="contact">Contact for queries</a></p>
 
         <!-- javascript -->
         <script type="application/javascript">
@@ -52,15 +91,6 @@
             img.addEventListener('mouseover', mouseOver, false)
             img.addEventListener('mouseout', mouseOut, false)
 
-            // define what happens when there is a mouse over event
-            function mouseOver() {
-                document.getElementById('caption').style.display = 'block';
-            }
-
-            // define what happens when there is a mouse out event
-            function mouseOut() {
-                document.getElementById('caption').style.display = 'none';
-            }
         </script>
 
         <!-- the end -->
